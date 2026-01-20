@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple of Psalms</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <title>Prayer of Swords</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -15,98 +15,43 @@
         body {
             background-color: #212121;
             color: #FFFFFF;
-            font-family: 'Nanum Myeongjo', serif;
-            font-weight: 700;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
-        }
-
-        nav {
-            display: flex;
             justify-content: center;
             align-items: center;
-            gap: 60px;
-            padding: 40px 20px;
+            padding: 20px;
+            font-family: 'Nanum Myeongjo', serif;
+            font-weight: 700;
         }
 
-        nav a {
-            color: #FFFFFF;
-            text-decoration: none;
-            font-size: 1.3rem;
-            letter-spacing: 0.2em;
-            transition: opacity 0.3s;
+        .content {
+            max-width: 600px;
+            text-align: center;
         }
 
-        nav a:hover {
-            opacity: 0.7;
-        }
-
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo {
-            width: 60px;
-            height: auto;
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 20px;
-        }
-
-        .center-logo {
-            margin-bottom: 60px;
-        }
-
-        .center-logo img {
-            width: 200px;
-            height: auto;
-        }
-
-        .text-content {
-            max-width: 500px;
-            text-align: justify;
-            line-height: 1.8;
+        .text {
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
             font-size: 1.1rem;
+            text-align: justify;
         }
 
-        .text-content::first-letter {
-            font-family: 'UnifrakturMaguntia', cursive;
-            font-size: 3.5em;
-            float: left;
-            line-height: 0.8;
-            margin-right: 8px;
-            margin-top: 5px;
+        .attribution {
+            font-style: italic;
+            font-size: 0.95rem;
+            color: #980000;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#articles">ARTICLES</a>
-        <a href="#psalms">PSALMS</a>
-        <div class="logo-container">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 740 740'%3E%3Cpath fill='%238B0000' d='M50,30 Q60,20 70,30 Q80,40 90,30 Q100,20 110,30 Q120,40 130,30 Q140,20 150,30 Q160,40 170,30 Q180,20 190,30 Q200,40 210,30 Q220,20 230,30 Q240,40 250,30 Q260,20 270,30 Q280,40 290,30 Q300,20 310,30 Q320,40 330,30 Q340,20 350,30 Q360,40 370,30 Q380,20 390,30 Q400,40 410,30 Q420,20 430,30 Q440,40 450,30 Q460,20 470,30 Q480,40 490,30 Q500,20 510,30 Q520,40 530,30 Q540,20 550,30 Q560,40 570,30 Q580,20 590,30 Q600,40 610,30 Q620,20 630,30 Q640,40 650,30 Q660,20 670,30 Q680,40 690,30 L690,30 Q685,35 680,45 Q670,65 650,85 Q630,105 600,125 L580,145 Q560,165 540,180 Q520,195 500,205 L480,215 Q460,225 440,230 L420,235 Q400,240 380,240 L360,240 Q340,240 320,235 L300,230 Q280,225 260,215 L240,205 Q220,195 200,180 Q180,165 160,145 L140,125 Q110,105 90,85 Q70,65 60,45 Q55,35 50,30 Z M100,70 Q110,90 130,110 L150,130 Q170,150 200,170 L230,190 Q260,210 300,220 L340,230 Q380,235 420,230 L460,220 Q500,210 530,190 L560,170 Q590,150 610,130 L630,110 Q650,90 660,70'/%3E%3C/svg%3E" alt="Logo" class="logo">
-        </div>
-        <a href="#tidings">TIDINGS</a>
-        <a href="#temple">TEMPLE</a>
-    </nav>
-
-    <main>
-        <div class="center-logo">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'%3E%3Cpath fill='white' stroke='white' stroke-width='8' d='M40,10 L40,90 M70,10 L70,90 M100,10 L100,90 M130,10 L130,90 M160,10 L160,90' /%3E%3Cpath fill='white' d='M30,5 L30,95 L50,95 L50,5 Z M60,5 L60,95 L80,95 L80,5 Z M90,5 L90,95 L110,95 L110,5 Z M120,5 L120,95 L140,95 L140,5 Z M150,5 L150,95 L170,95 L170,5 Z'/%3E%3C/svg%3E" alt="Temple Symbol">
-        </div>
-
-        <div class="text-content">
-            We are the Clergy of the Temple of Psalms. Our Prayer is Alchemy and our Hymns are Blade Arts. Our Worship is the Divinity of the Body and the Eternity of the Soul. Let us Sing to thee songs from another World. Let us show thee the space between all that Is, and all that is Not.
-        </div>
-    </main>
+    <div class="content">
+        <p class="text">
+            ARE WE DOOMED TO BE FOREVER RULED BY THE CRUEL, THE VIOLENT, AND THE BRUTAL? IF THERE WAS SUCH A WAY TO EXCISE SUCH A WORLD, IS IT NOT THE PURPOSE OF THOSE WITH WILL AND STRENGTH TO DO SO? AND FOR THOSE WITHOUT SUCH QUALITIES, IS IT NOT THEIR OBLIGATION TO FIND IT WITHIN THEMSELVES?
+        </p>
+        <p class="attribution">
+            — PRAYER OF SWORDS —
+        </p>
+    </div>
 </body>
 </html>
